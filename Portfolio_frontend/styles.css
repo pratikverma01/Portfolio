@@ -1,0 +1,1158 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+
+.highlight {
+    color: #ffcc00;
+}
+
+.typing {
+    font-size: 1.5em;
+    color: #ddd;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #ffcc00;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, blinkCursor 0.8s infinite;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 1.2em;
+    color: white;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #ffdd33;
+}
+
+.btn-alt {
+    background: transparent;
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
+}
+
+.btn-alt:hover {
+    background: #ffcc00;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blinkCursor {
+    50% { border-color: transparent; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Me Section */
+.about-section {
+    padding: 80px 50px;
+    text-align: center;
+    color: white;
+    position: relative;
+    background: url('https://source.unsplash.com/1600x900/?technology,futuristic') no-repeat center center/cover;
+    overflow: hidden;
+}
+
+/* Floating animation */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    animation: glow 1.5s infinite alternate;
+}
+
+.section-title span {
+    color: #ffcc00;
+    text-shadow: 0 0 15px #ffcc00;
+}
+
+/* Neon Glow */
+@keyframes glow {
+    0% { text-shadow: 0 0 10px #ffcc00; }
+    100% { text-shadow: 0 0 25px #ffcc00, 0 0 50px #ff9900; }
+}
+
+/* About Content */
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.about-text {
+    max-width: 500px;
+    font-size: 1.2em;
+}
+
+/* Floating Glass Card */
+.about-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    text-align: left;
+    width: 400px;
+    transform: perspective(1000px) rotateY(5deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-card:hover {
+    transform: perspective(1000px) rotateY(0deg) scale(1.05);
+}
+
+/* Timeline */
+.timeline {
+    margin-top: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 10px 0;
+    font-size: 1.1em;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.timeline-item .year {
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+
+
+
+/* Skills Section */
+.skills-section {
+    margin-top: 50px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Glowing Skill Circle */
+.glow-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#ffcc00 0% 0%, #222 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: white;
+    position: relative;
+    box-shadow: 0 0 15px #ffcc00;
+    animation: spin 4s linear infinite;
+}
+
+.glow-circle::before {
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: #16213e;
+    position: absolute;
+    border-radius: 50%;
+}
+
+/* Spin Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Fade-In Animation */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+
+
+.projects-section {
+    padding: 100px 50px;
+    text-align: center;
+    background: linear-gradient(135deg, #0f3460, #1a1a2e);
+    color: white;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.section-title span {
+    color: #ffcc00;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    transition: transform 0.5s, box-shadow 0.5s;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transform-style: preserve-3d;
+}
+
+/* Hover Effect: Tilt & Glow */
+.project-card:hover {
+    transform: scale(1.05) rotate3d(1, 1, 0, 10deg);
+    box-shadow: 0 0 30px rgba(255, 204, 0, 0.6);
+}
+
+/* Project Image */
+.project-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s;
+}
+
+/* Hover Effect: Image Zoom */
+.project-card:hover .project-image {
+    transform: scale(1.1);
+}
+
+/* Project Content */
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    font-size: 1.5em;
+    color: #ffcc00;
+}
+
+.project-content p {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+}
+
+/* Project Button */
+.btn-project {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: black;
+    background: linear-gradient(90deg, #ffcc00, #ff8800);
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #ffcc00;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+/* Hover Effect */
+.btn-project:hover {
+    box-shadow: 0 0 20px #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Scroll Animation */
+.project-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.project-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.achievements-section {
+    padding: 100px 50px;
+    text-align: center;
+    color: white;
+    background: url('https://source.unsplash.com/1600x900/?space,technology') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Achievements Container */
+.achievements-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Achievement Card */
+.achievement-card {
+    width: 280px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #ffcc00;
+}
+
+/* Icon */
+.icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px #ffcc00;
+}
+
+/* Title */
+.achievement-card h3 {
+    font-size: 1.3em;
+    color: #ffcc00;
+}
+
+/* Description */
+.achievement-card p {
+    font-size: 1em;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+/* Floating Animation */
+@keyframes floatEffect {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+.achievement-card:nth-child(odd) {
+    animation: floatEffect 3s infinite alternate ease-in-out;
+}
+
+.achievement-card:nth-child(even) {
+    animation: floatEffect 4s infinite alternate ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-section {
+    padding: 100px 50px;
+    text-align: center;
+    color: white;
+    background: url('https://source.unsplash.com/1600x900/?galaxy,technology') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contact Form & Info */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* Contact Form */
+.contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+}
+
+.input-group label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.3s ease-in-out;
+}
+
+.input-group input:focus ~ label,
+.input-group textarea:focus ~ label,
+.input-group input:valid ~ label,
+.input-group textarea:valid ~ label {
+    top: -10px;
+    left: 10px;
+    font-size: 0.8em;
+    color: #ffcc00;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    color: white;
+    background: #ffcc00;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background: #ffdd33;
+    transform: scale(1.1);
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    color: #ffcc00;
+    margin-right: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 2em;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+.skills-section {
+    padding: 100px 50px;
+    text-align: center;
+    background: linear-gradient(135deg, #0f3460, #1a1a2e);
+    color: white;
+}
+
+/* Title */
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.section-title span {
+    color: #ffcc00;
+}
+
+/* Skill Grid */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Skill Card */
+.skill-card {
+    width: 180px;
+    height: 220px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+}
+
+/* Flip Effect */
+.skill-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Card Front & Back */
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(234, 193, 30, 0.5);
+}
+
+/* Front Design */
+.card-front {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    color: #ffcc00;
+}
+
+.card-front i {
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+
+/* Back Design */
+.card-back {
+    background: #ffcc00;
+    color: black;
+    transform: rotateY(180deg);
+    padding: 15px;
+    text-align: center;
+}
+
+.card-back span {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+.resume-section {
+    padding: 100px 50px;
+    text-align: center;
+    background: radial-gradient(circle at center, #16213e, #0f3460);
+    color: white;
+    position: relative;
+}
+
+/* Resume Card */
+.resume-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    position: relative;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+/* Hover Effect */
+.resume-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 204, 0, 0.6);
+}
+
+/* Resume Content */
+.resume-content h3 {
+    font-size: 1.8em;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.resume-content p {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+
+/* Glowing Download Button */
+.btn-resume {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    color: black;
+    background: linear-gradient(90deg, #ffcc00, #ffdd33);
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #ffcc00;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+/* Hover Effect */
+.btn-resume:hover {
+    box-shadow: 0 0 20px #ffcc00;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.testimonials-section {
+    padding: 100px 50px;
+    text-align: center;
+    color: white;
+    background: #0f3460;
+    position: relative;
+}
+
+/* Testimonials Container */
+.testimonials-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    animation: slide 8s infinite;
+}
+
+/* Slide Animation */
+@keyframes slide {
+    0%, 100% { transform: translateX(0); }
+    33% { transform: translateX(-350px); }
+    66% { transform: translateX(-700px); }
+}
+
+
+
+
+
+
+
+
+
+.certifications-section {
+    padding: 100px 50px;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+    color: white;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.section-title span {
+    color: #ffcc00;
+}
+
+/* Grid Layout */
+.certifications-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Certificate Card */
+.cert-card {
+    width: 280px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
+    cursor: pointer;
+}
+
+.cert-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.cert-card:hover img {
+    transform: scale(1.1);
+}
+
+.cert-info {
+    padding: 15px;
+}
+
+.cert-info h3 {
+    font-size: 1.2em;
+    color: #ffcc00;
+}
+
+.cert-info p {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Hover Effects */
+.cert-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 204, 0, 0.6);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80vh;
+    border-radius: 10px;
+}
+
+#certDetails {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: url('https://source.unsplash.com/1600x900/?technology,coding') no-repeat center center/cover;
+}
+
+/* Overlay for Darkening Background */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Hero Text */
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+/* 3D Hero Image with Neon Glow */
+.hero-photo-container {
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    width: 500px;
+    perspective: 1000px; /* Depth effect */
+}
+
+/* Neon Glow & Animation */
+.hero-photo {
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+    transform-style: preserve-3d;
+    transition: transform 0.2s ease-out;
+    filter: drop-shadow(0px 0px 10px rgba(255, 204, 0, 0.5));
+    /* animation: neonPulse 2s infinite alternate ease-in-out; */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    .hero-photo-container {
+        width: 300px;
+        right: 2%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-photo-container {
+        width: 200px;
+        right: 2%;
+    }
+}
+
+
+
+/* Background Image Stays Static */
+.hero-bg {
+    position: absolute; /* Stays within .hero section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('bgimage.avif') no-repeat center center/cover;
+    opacity: 0.8; /* Low visibility */
+    z-index: -1; /* Sends it behind everything */
+}
+
+.about-bg {
+    position: absolute; /* Stays within .hero section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+
+    /* background: url('3d-render-technology-background-with-network-communications-structure-design.jpg') no-repeat center center/cover; */
+    opacity: 0.4; /* Low visibility */
+    z-index: -1; /* Sends it behind everything */
+}
+
+
+/* Skills Section */
+.skills-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 50px;
+    overflow: hidden;
+    color: white;
+}
+
+/* Background Image */
+.skills-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('laptop-computer-with-halfopen-screen-dark-background-copy-space.jpg') no-repeat center center/cover;
+    opacity: 0.2; /* Lower opacity for better readability */
+    z-index: -1; /* Keeps it behind all content */
+}
+
+/* Ensure other content remains unaffected */
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Keep the image in place without shifting */
+.hero-photo-container {
+    position: absolute; /* Keeps it within the hero section */
+    right: 1%;
+    bottom: 5%;
+    width: 600px;
+    height: 600px; /* Fixed height to prevent shifting */
+    perspective: 1000px; /* Adds 3D depth effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wrapper to hold front and back faces */
+.hero-photo-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+}
+
+/* Ensuring front and back images stay aligned */
+.front, .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* Flip Effect on Hover */
+.hero-photo-container:hover .hero-photo-wrapper {
+    transform: rotateY(180deg);
+}
+
+/* Front Image */
+.front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the area properly */
+    display: block;
+    opacity: 0.8;
+}
+
+/* Back Side with Transparent Background */
+.back {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    .hero-photo-container {
+        width: 300px;
+        height: 300px;
+        right: 2%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-photo-container {
+        width: 200px;
+        height: 200px;
+        right: 2%;
+    }
+}
