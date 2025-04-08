@@ -10,6 +10,7 @@ body {
     background: linear-gradient(135deg, #1a1a2e, #16213e);
     color: white;
     overflow-x: hidden;
+    
 }
 
 /* Navigation Bar */
@@ -278,6 +279,14 @@ nav {
 
 
 
+
+
+
+
+
+#gap{
+    margin-bottom: 50px;
+}
 
 
 .projects-section {
@@ -957,6 +966,7 @@ nav {
 .hero-content {
     position: relative;
     z-index: 2;
+    margin-right: 750px;
 }
 
 /* Hero Text */
@@ -1010,7 +1020,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('bgimage.avif') no-repeat center center/cover;
+    background: url('../image_assets/bgimage.avif') no-repeat center center/cover;
     opacity: 0.8; /* Low visibility */
     z-index: -1; /* Sends it behind everything */
 }
@@ -1032,7 +1042,7 @@ nav {
 /* Skills Section */
 .skills-section {
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1056,20 +1066,19 @@ nav {
 }
 
 /* Ensure other content remains unaffected */
-.container {
-    position: relative;
-    z-index: 2;
+
+
+
+
+
+
+
+
+
+.clickme{
+    text-decoration: none;
+    color:#ffcc00;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1083,8 +1092,8 @@ nav {
     position: absolute; /* Keeps it within the hero section */
     right: 1%;
     bottom: 5%;
-    width: 600px;
-    height: 600px; /* Fixed height to prevent shifting */
+    width: 700px;
+    height: 700px; /* Fixed height to prevent shifting */
     perspective: 1000px; /* Adds 3D depth effect */
     display: flex;
     align-items: center;
@@ -1125,8 +1134,9 @@ nav {
 }
 
 /* Back Side with Transparent Background */
+/* Back Side with FULL Transparency */
 .back {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background: transparent; /* Makes the back side fully transparent */
     color: white;
     display: flex;
     flex-direction: column;
@@ -1139,6 +1149,7 @@ nav {
     width: 100%;
     height: 100%;
 }
+
 
 /* Responsive Adjustments */
 @media (max-width: 900px) {
@@ -1156,3 +1167,227 @@ nav {
         right: 2%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Back Side - Transparent Background with Stylish Text */
+.back {
+    background: transparent; /* Fully transparent */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+}
+
+/* Title with Gradient */
+.back-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ffcc00, #ff6600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.5);
+}
+
+/* Stylish Paragraph Text */
+.back-text {
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 80%;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Highlighting Important Words */
+.back-text span {
+    font-weight: bold;
+    color: #ffcc00; /* Gold color */
+    text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8);
+}
+
+/* Glow Effect */
+.back p:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image_assets/abc1.avif'); /* replace with your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* adjust opacity as needed */
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.skill-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image_assets/abc.jpg'); /* replace with your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* adjust opacity as needed */
+    z-index: 1;
+}
+.skills-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image_assets/abc2.avif'); /* replace with your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* adjust opacity as needed */
+    z-index: 1;
+}
+.projects-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.certi-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image_assets/abc3.avif'); /* replace with your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* adjust opacity as needed */
+    z-index: 1;
+}
+.certifications-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.achievements-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image_assets/abc6.jpg'); /* replace with your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* adjust opacity as needed */
+    z-index: 1;
+}
+.achievements-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image_assets/abc5.avif'); /* replace with your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* adjust opacity as needed */
+    z-index: 1;
+}
+.contact-section {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn1-resume {
+    display: inline-block;
+    padding: 5px 8px;
+    font-size: 1.2em;
+    color: white;
+    background: #ffcc00;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #ffcc00;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.btn1-resume:hover {
+    display: inline-block;
+    padding: 5px 8px;
+    font-size: 1.2em;
+    color: white;
+    background: white;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #ffcc00;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
