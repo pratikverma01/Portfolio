@@ -1020,7 +1020,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../image_assets/bgimage.avif') no-repeat center center/cover;
+    background: url('image_assets/bgimage.avif') no-repeat center center/cover;
     opacity: 0.8; /* Low visibility */
     z-index: -1; /* Sends it behind everything */
 }
@@ -1257,7 +1257,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../image_assets/abc1.avif'); /* replace with your image path */
+    background-image: url('image_assets/abc1.avif'); /* replace with your image path */
     background-size: cover;
     background-position: center;
     opacity: 0.3; /* adjust opacity as needed */
@@ -1275,7 +1275,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../image_assets/abc.jpg'); /* replace with your image path */
+    background-image: url('image_assets/abc.jpg'); /* replace with your image path */
     background-size: cover;
     background-position: center;
     opacity: 0.3; /* adjust opacity as needed */
@@ -1292,7 +1292,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../image_assets/abc2.avif'); /* replace with your image path */
+    background-image: url('image_assets/abc2.avif'); /* replace with your image path */
     background-size: cover;
     background-position: center;
     opacity: 0.3; /* adjust opacity as needed */
@@ -1309,7 +1309,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../image_assets/abc3.avif'); /* replace with your image path */
+    background-image: url('image_assets/abc3.avif'); /* replace with your image path */
     background-size: cover;
     background-position: center;
     opacity: 0.3; /* adjust opacity as needed */
@@ -1326,7 +1326,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../image_assets/abc6.jpg'); /* replace with your image path */
+    background-image: url('image_assets/abc6.jpg'); /* replace with your image path */
     background-size: cover;
     background-position: center;
     opacity: 0.3; /* adjust opacity as needed */
@@ -1343,7 +1343,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../image_assets/abc5.avif'); /* replace with your image path */
+    background-image: url('image_assets/abc5.avif'); /* replace with your image path */
     background-size: cover;
     background-position: center;
     opacity: 0.3; /* adjust opacity as needed */
