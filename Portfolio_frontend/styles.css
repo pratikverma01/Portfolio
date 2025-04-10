@@ -227,9 +227,7 @@ nav {
 
 
 /* Skills Section */
-.skills-section {
-    margin-top: 50px;
-}
+
 
 .skills-container {
     display: flex;
@@ -239,7 +237,7 @@ nav {
 }
 
 /* Glowing Skill Circle */
-.glow-circle {
+/* .glow-circle {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -261,19 +259,19 @@ nav {
     background: #16213e;
     position: absolute;
     border-radius: 50%;
-}
+} */
 
 /* Spin Animation */
-@keyframes spin {
+/* @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-}
+} */
 
 /* Fade-In Animation */
-@keyframes fadeInUp {
+/* @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
-}
+} */
 
 
 
@@ -306,6 +304,8 @@ nav {
 .section-title span {
     color: #ffcc00;
 }
+
+
 
 /* Projects Grid */
 .projects-grid {
@@ -966,7 +966,7 @@ nav {
 .hero-content {
     position: relative;
     z-index: 2;
-    margin-right: 750px;
+    margin-right: 600px;
 }
 
 /* Hero Text */
@@ -1020,23 +1020,12 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('image_assets/bgimage.avif') no-repeat center center/cover;
-    opacity: 0.8; /* Low visibility */
+    background: url('image_assets/a.png') no-repeat center center/cover;
+    opacity: 0.9; /* Low visibility */
     z-index: -1; /* Sends it behind everything */
 }
 
-.about-bg {
-    position: absolute; /* Stays within .hero section */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
 
-    /* background: url('3d-render-technology-background-with-network-communications-structure-design.jpg') no-repeat center center/cover; */
-    opacity: 0.4; /* Low visibility */
-    z-index: -1; /* Sends it behind everything */
-}
 
 
 /* Skills Section */
@@ -1092,8 +1081,8 @@ nav {
     position: absolute; /* Keeps it within the hero section */
     right: 1%;
     bottom: 5%;
-    width: 700px;
-    height: 700px; /* Fixed height to prevent shifting */
+    width: 600px;
+    height: 600px; /* Fixed height to prevent shifting */
     perspective: 1000px; /* Adds 3D depth effect */
     display: flex;
     align-items: center;
@@ -1251,13 +1240,14 @@ nav {
     overflow: hidden;
 }
 
+
 .about-bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('image_assets/abc1.avif'); /* replace with your image path */
+    background-image: url('image_assets/2.png'); /* replace with your image path */
     background-size: cover;
     background-position: center;
     opacity: 0.3; /* adjust opacity as needed */
@@ -1275,7 +1265,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('image_assets/abc.jpg'); /* replace with your image path */
+    background-image: url('image_assets/3.png'); /* replace with your image path */
     background-size: cover;
     background-position: center;
     opacity: 0.3; /* adjust opacity as needed */
@@ -1292,7 +1282,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('image_assets/abc2.avif'); /* replace with your image path */
+    background-image: url('image_assets/4.png'); /* replace with your image path */
     background-size: cover;
     background-position: center;
     opacity: 0.3; /* adjust opacity as needed */
@@ -1309,7 +1299,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('image_assets/abc3.avif'); /* replace with your image path */
+    background-image: url('image_assets/5.png'); /* replace with your image path */
     background-size: cover;
     background-position: center;
     opacity: 0.3; /* adjust opacity as needed */
@@ -1326,7 +1316,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('image_assets/abc6.jpg'); /* replace with your image path */
+    background-image: url('image_assets/2.png'); /* replace with your image path */
     background-size: cover;
     background-position: center;
     opacity: 0.3; /* adjust opacity as needed */
@@ -1343,7 +1333,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('image_assets/abc5.avif'); /* replace with your image path */
+    background-image: url('image_assets/1.png'); /* replace with your image path */
     background-size: cover;
     background-position: center;
     opacity: 0.3; /* adjust opacity as needed */
@@ -1353,6 +1343,24 @@ nav {
     position: relative;
     overflow: hidden;
 }
+
+.resume-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('image_assets/2.png'); /* replace with your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* adjust opacity as needed */
+    z-index: 1;
+}
+.resume-section {
+    position: relative;
+    overflow: hidden;
+}
+
 
 
 
@@ -1391,3 +1399,69 @@ nav {
     transition: box-shadow 0.3s, transform 0.3s;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-section {
+    padding: 100px 50px;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 15px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: #ffcc00;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    color: #fff;
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }

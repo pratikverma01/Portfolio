@@ -160,3 +160,36 @@ function closeModal() {
 // });
 
 
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".carousel-track");
+    const images = document.querySelectorAll(".carousel-image");
+    const prevBtn = document.querySelector(".carousel-btn.prev");
+    const nextBtn = document.querySelector(".carousel-btn.next");
+
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        const slideWidth = images[0].clientWidth;
+        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel();
+    });
+
+    prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateCarousel();
+    });
+
+    window.addEventListener("resize", updateCarousel);
+
+    // Optional Auto-slide
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel();
+    }, 5000); // Change every 5 seconds
+});
