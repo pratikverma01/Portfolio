@@ -1069,6 +1069,11 @@ nav {
     color:#ffcc00;
 }
 
+.clickabout{
+    text-decoration: none;
+    color:white;
+}
+
 
 
 
@@ -1415,7 +1420,7 @@ nav {
 
 
 
-
+/* 
 .carousel-section {
     padding: 100px 50px;
     text-align: center;
@@ -1464,4 +1469,95 @@ nav {
 }
 
 .carousel-btn.prev { left: 10px; }
-.carousel-btn.next { right: 10px; }
+.carousel-btn.next { right: 10px; } */
+
+
+
+
+
+
+
+
+
+.carousel-section {
+    padding: 100px 50px;
+    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    perspective: 1000px;
+    
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transform: scale(0.8);
+    filter: blur(4px);
+    transition: transform 0.5s ease, filter 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-slide img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Center slide in focus */
+.carousel-slide.active {
+    transform: scale(1);
+    filter: blur(0);
+    z-index: 2;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: #ffcc00;
+    cursor: pointer;
+    z-index: 3;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.carousel-btn:hover {
+    color: #ffffff;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
