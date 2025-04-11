@@ -13,6 +13,12 @@
     <header>
         <nav>
             <div class="logo">Pratik Verma</div>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            
             <ul class="nav-links">
                 <li><a href="#about"><strong>About</strong></a></li>
                 <li><a href="#projects"><strong>Projects</strong></a></li>
@@ -31,8 +37,8 @@
             <h1>Hi, I'm <span class="highlight">Pratik Verma</span></h1>
             <p class="typing">A Passionate Developer & Tech Enthusiast</p>
             <div class="buttons">
-                <a href="#projects" class="btn">View Projects</a>
-                <a href="#contact" class="btn btn-alt">Contact Me</a>
+                <a href="#projects" class="btn"><strong>View Projects</strong></a>
+                <a href="#resume" class="btn btn-alt"><strong>View Resume</strong></a>
             </div>
         </div>
         <div class="hero-photo-container">
@@ -43,7 +49,7 @@
                 <div class="hero-photo back">
                     <h2 class="back-title">I'm <span>Pratik Verma</span></h2>
                     <p class="back-text">
-                        A passionate <span>developer</span>, <span>innovator</span>, and <span>tech enthusiast</span>.
+                        A passionate <span>developer</span>, <span>leader</span>, and <span>tech enthusiast</span>.
                     </p>
                     <p class="back-text">
                         With expertise in <span>Full-Stack Development</span>, <span>AI</span>, and <span>problem-solving</span>, I’ve participated in multiple hackathons and leadership roles.
@@ -105,16 +111,12 @@
                             <p><strong>Student Coordinator</strong></p>
                             <p> - ISET-AIC, CVRGU</p>
                         </div>
-                        <!-- <div class="timeline-item">
-                            <span class="year">2024</span>
-                            <p><strong>Finalist</strong> - Smart India Hackathon</p>
-                        </div> -->
+                        
                     </div>
                 </div>
 
                 <div class="about-card">
                     <h3>Click To Know More</h3>
-                    <!-- <h5>- Click To Redirect</h5> -->
                     <div class="timeline">
                         
                         <div class="timeline-item">
@@ -123,15 +125,11 @@
                         </div>
                         <div class="timeline-item">
                             <span class="year"><a href="https://leetcode.com/u/pratik_verma01/" class="clickme" target="_blank" rel="noopener noreferrer">LeetCode</a></span><span> - <a href="https://leetcode.com/u/pratik_verma01/" class="clickabout" target="_blank" rel="noopener noreferrer">@pratik_verma01</a></span>
-                            <!-- <p><strong>Lead Organizer</strong> - IDEA Lab, CVRGU</p> -->
                         </div>
                         <div class="timeline-item">
                             <span class="year"><a href="https://github.com/pratikverma01" class="clickme" target="_blank" rel="noopener noreferrer">GitHub</a></span><span> - <a href="https://github.com/pratikverma01" class="clickabout" target="_blank" rel="noopener noreferrer">@pratikverma01</a></span>
-                            <!-- <p><strong>Student Coordinator</strong> - ISET-AIC, CVRGU</p> -->
                         </div>
-                        <!-- <div class="timeline-item">
-                            <span class="year"><a href="https://www.linkedin.com/in/pratikverma01/" class="clickme">Instagram</a></span>
-                        </div> -->
+                        
                         <div class="timeline-item">
                             <span class="year"><a href="https://x.com/pratik_verma01" class="clickme" target="_blank" rel="noopener noreferrer">Twitter (X)</a></span><span> - <a href="https://x.com/pratik_verma01" class="clickabout" target="_blank" rel="noopener noreferrer">@pratik_verma01</a></span>
                         </div>
@@ -153,8 +151,8 @@
             <div class="resume-card">
                 <div class="resume-content">
                     <h3>Pratik Verma</h3>
-                    <p>Full-Stack Developer | Innovator | Tech Enthusiast</p>
-                    <a href="image_assets/resume.pdf" download class="btn-resume">Download Resume</a>
+                    <p><strong>Full-Stack Developer | Problem Solver | Leader | Tech Enthusiast</strong></p>
+                    <a href="image_assets/resume.pdf" download class="btn-resume"><strong>Download Resume</strong></a>
                 </div>
             </div>
         </div>
@@ -202,7 +200,7 @@
                             <i class="fab fa-aws"></i>
                         </div>
                         <div class="card-back">
-                            <p>Knowledgeable in Power BI, MySQL, UI/UX, and other tools for data analysis and full-stack development.</p>
+                            <p>Knowledgeable in Power BI, MySQL, UI/UX, Git, VS Code and other tools for data analysis and full-stack development.</p>
                             <span>80%</span>
                         </div>
                     </div>
@@ -216,7 +214,7 @@
                         </div>
                         <div class="card-back">
                             <p>Solved 150+ DSA problems in Java across LeetCode, GFG, HackerRank, and CodeChef.</p>
-                            <span>75%</span>
+                            <span>85%</span>
                         </div>
                     </div>
                 </div>
@@ -232,12 +230,25 @@
                 <div class="skill-card">
                     <div class="card-inner">
                         <div class="card-front">
+                            <h3>Frameworks</h3>
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="card-back">
+                            <p>Knowledgeable in React, Node.js and other frameworks.</p>
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="card-inner">
+                        <div class="card-front">
                             <h3>Soft Skills</h3>
                             <i class="fa-solid fa-brain"></i>
                         </div>
                         <div class="card-back">
                             <p>Strong interpersonal skills with fluency in English; effective in communication, collaboration, and relationship-building.</p>
-                            <span>90%</span>
+                            <span>95%</span>
                         </div>
                     </div>
                 </div>
@@ -311,7 +322,7 @@
                     <div class="project-content">
                         <h3>S-D-A-S</h3>
                         <p>Developed a student dropout analysis system during SIH'23 to identify and track students at risk of dropping out, enabling timely intervention.</p>
-                        <a href="#" class="btn-project" target="_blank" rel="noopener noreferrer">View Project</a>
+                        <a href="https://github.com/pratikverma01/Student-Dropout-Analysis-System" class="btn-project" target="_blank" rel="noopener noreferrer">View Project</a>
                     </div>
                 </div>
     
@@ -423,27 +434,6 @@
         </div>
     </section>
 
-    <!-- <section id="events" class="carousel-section">
-        <h2 class="section-title">Event <span>Gallery</span></h2>
-        
-        <div class="carousel-container">
-          <div class="carousel-track">
-            
-            <img src="image_assets/IMG7.jpg" class="carousel-image" alt="Event 2">
-            <img src="image_assets/IMG8.jpg" class="carousel-image" alt="Event 3">
-            <img src="image_assets/IMG9.jpg" class="carousel-image" alt="Event 1">
-            <img src="image_assets/IMG1.JPG" class="carousel-image" alt="Event 4">
-            <img src="image_assets/IMG2.JPG" class="carousel-image" alt="Event 5">
-            <img src="image_assets/IMG5.jpg" class="carousel-image" alt="Event 6">
-            <img src="image_assets/IMG3.JPG" class="carousel-image" alt="Event 7">
-            <img src="image_assets/IMG4.JPG" class="carousel-image" alt="Event 8">
-          </div>
-      
-          <button class="carousel-btn prev">&#10094;</button>
-          <button class="carousel-btn next">&#10095;</button>
-        </div>
-      </section> -->
-
       <section id="events" class="carousel-section">
         <h2 class="section-title">Event <span>Gallery</span></h2>
       
@@ -507,18 +497,24 @@
                 <!-- Contact Details -->
                 <div class="contact-info">
                     <p><i class="fas fa-envelope"></i> workwithpratikverma@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> +91 8789313927</p>
+                    <!-- <p><i class="fas fa-phone"></i> +91 8789313927</p> -->
                     <p><i class="fas fa-map-marker-alt"></i> Bhubaneswar, Odisha, India</p>
     
                     <!-- Social Icons -->
                     <div class="social-icons">
-                        <a href="https://github.com/pratikverma01"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/pratikverma01/"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://x.com/pratik_verma01"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/pratikverma01" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pratikverma01/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/pratik_verma01" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+          <p>&copy; <span id="currentYear"></span> Pratik Verma. All rights reserved.</p>
+        </div>
+    </footer>
+      
 </body>
 </html>

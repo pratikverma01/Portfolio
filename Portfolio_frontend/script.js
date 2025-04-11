@@ -144,56 +144,6 @@ function closeModal() {
 }
 
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const photoContainer = document.querySelector(".hero-photo-container");
-//     const photo = document.querySelector(".hero-photo");
-
-//     photoContainer.addEventListener("mousemove", (e) => {
-//         let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
-//         let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
-//         photo.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-//     });
-
-//     photoContainer.addEventListener("mouseleave", () => {
-//         photo.style.transform = "rotateY(0deg) rotateX(0deg)";
-//     });
-// });
-
-
-
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     const track = document.querySelector(".carousel-track");
-//     const images = document.querySelectorAll(".carousel-image");
-//     const prevBtn = document.querySelector(".carousel-btn.prev");
-//     const nextBtn = document.querySelector(".carousel-btn.next");
-
-//     let currentIndex = 0;
-
-//     function updateCarousel() {
-//         const slideWidth = images[0].clientWidth;
-//         track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-//     }
-
-//     nextBtn.addEventListener("click", () => {
-//         currentIndex = (currentIndex + 1) % images.length;
-//         updateCarousel();
-//     });
-
-//     prevBtn.addEventListener("click", () => {
-//         currentIndex = (currentIndex - 1 + images.length) % images.length;
-//         updateCarousel();
-//     });
-
-//     window.addEventListener("resize", updateCarousel);
-
-//     // Optional Auto-slide
-//     setInterval(() => {
-//         currentIndex = (currentIndex + 1) % images.length;
-//         updateCarousel();
-//     }, 5000); // Change every 5 seconds
-// });
-
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -239,53 +189,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     const slides = document.querySelectorAll(".carousel-slide");
-//     const track = document.querySelector(".carousel-track");
-//     const prevBtn = document.querySelector(".carousel-btn.prev");
-//     const nextBtn = document.querySelector(".carousel-btn.next");
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  });
   
-//     let currentIndex = 0;
-  
-//     function updateSlides() {
-//       slides.forEach((slide, index) => {
-//         slide.classList.remove("active");
-  
-//         if (
-//           index === currentIndex ||
-//           index === (currentIndex - 1 + slides.length) % slides.length ||
-//           index === (currentIndex + 1) % slides.length
-//         ) {
-//           slide.style.display = "block";
-//         } else {
-//           slide.style.display = "none";
-//         }
-//       });
-  
-//       slides[currentIndex].classList.add("active");
-  
-//       // Shift track to center the active slide
-//       const slideWidth = slides[0].offsetWidth + 20; // includes gap
-//       const offset = (slideWidth * currentIndex) - slideWidth;
-//       track.style.transform = `translateX(-${offset}px)`;
-//     }
-  
-//     nextBtn.addEventListener("click", () => {
-//       currentIndex = (currentIndex + 1) % slides.length;
-//       updateSlides();
-//     });
-  
-//     prevBtn.addEventListener("click", () => {
-//       currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-//       updateSlides();
-//     });
-  
-//     // Auto-slide (optional)
-//     setInterval(() => {
-//       currentIndex = (currentIndex + 1) % slides.length;
-//       updateSlides();
-//     }, 5000);
-  
-//     updateSlides();
-//   });
-  
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    const navItems = document.querySelectorAll(".nav-links a");
+
+    // Toggle menu on hamburger click
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+
+    // Close menu when any link is clicked
+    navItems.forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+        });
+    });
+});
