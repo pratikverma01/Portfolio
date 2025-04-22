@@ -813,49 +813,6 @@ nav {
 
 
 
-.testimonials-section {
-    padding: 100px 50px;
-    text-align: center;
-    color: white;
-    background: #0f3460;
-    position: relative;
-}
-
-/* Testimonials Container */
-.testimonials-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    overflow: hidden;
-    max-width: 800px;
-    margin: auto;
-}
-
-/* Testimonial Card */
-.testimonial-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    min-width: 300px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-    animation: slide 8s infinite;
-}
-
-/* Slide Animation */
-@keyframes slide {
-    0%, 100% { transform: translateX(0); }
-    33% { transform: translateX(-350px); }
-    66% { transform: translateX(-700px); }
-}
-
-
-
-
-
-
-
-
-
 .certifications-section {
     padding: 100px 50px;
     text-align: center;
@@ -1118,8 +1075,8 @@ nav {
     position: absolute; /* Keeps it within the hero section */
     right: 1%;
     bottom: 5%;
-    width: 600px;
-    height: 600px; /* Fixed height to prevent shifting */
+    width: 650px;
+    height: 650px; /* Fixed height to prevent shifting */
     perspective: 1000px; /* Adds 3D depth effect */
     display: flex;
     align-items: center;
@@ -1156,7 +1113,7 @@ nav {
     height: 100%;
     object-fit: cover; /* Ensures image fills the area properly */
     display: block;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 /* Back Side with Transparent Background */
@@ -1417,10 +1374,11 @@ nav {
     padding: 5px 8px;
     font-size: 1.2em;
     color: white;
-    background: #ffcc00;
+    /* background: #ffcc00; */
+    background: #e5be21;
     border-radius: 5px;
     text-decoration: none;
-    box-shadow: 0 0 10px #ffcc00;
+    /* box-shadow: 0 0 10px #ffcc00; */
     transition: box-shadow 0.3s, transform 0.3s;
 }
 
