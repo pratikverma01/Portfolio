@@ -103,27 +103,6 @@ nav {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Hero Section */
 
 .highlight {
@@ -187,11 +166,6 @@ nav {
 @keyframes blinkCursor {
     50% { border-color: transparent; }
 }
-
-
-
-
-
 
 
 
@@ -306,10 +280,6 @@ nav {
     gap: 30px;
     flex-wrap: wrap;
 }
-
-
-
-
 
 
 
@@ -431,12 +401,6 @@ nav {
 
 
 
-
-
-
-
-
-
 .achievements-section {
     padding: 100px 50px;
     text-align: center;
@@ -508,15 +472,6 @@ nav {
 .achievement-card:nth-child(even) {
     animation: floatEffect 4s infinite alternate ease-in-out;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -642,11 +597,6 @@ nav {
 
 
 
-
-
-
-
-
 .skills-section {
     padding: 100px 50px;
     text-align: center;
@@ -738,9 +688,6 @@ nav {
 
 
 
-
-
-
 .resume-section {
     padding: 100px 50px;
     text-align: center;
@@ -800,13 +747,6 @@ nav {
     box-shadow: 0 0 20px #ffcc00;
     transform: scale(1.1);
 }
-
-
-
-
-
-
-
 
 
 
@@ -917,12 +857,6 @@ nav {
     font-weight: bold;
     cursor: pointer;
 }
-
-
-
-
-
-
 
 
 
@@ -1043,13 +977,6 @@ nav {
     z-index: -1; /* Keeps it behind all content */
 }
 
-/* Ensure other content remains unaffected */
-
-
-
-
-
-
 
 
 
@@ -1065,12 +992,6 @@ nav {
 
 
 
-
-
-
-
-
-/* Keep the image in place without shifting */
 .hero-photo-container {
     position: absolute; /* Keeps it within the hero section */
     right: 1%;
@@ -1156,18 +1077,6 @@ nav {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* Back Side - Transparent Background with Stylish Text */
 .back {
     background: transparent; /* Fully transparent */
     color: white;
@@ -1216,13 +1125,6 @@ nav {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
-
-
-
-
-
-
-
 
 
 
@@ -1357,18 +1259,6 @@ nav {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .btn1-resume {
     display: inline-block;
     padding: 5px 8px;
@@ -1393,14 +1283,6 @@ nav {
     box-shadow: 0 0 10px #ffcc00;
     transition: box-shadow 0.3s, transform 0.3s;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -1480,11 +1362,6 @@ nav {
 
 
 
-
-
-
-
-
 .site-footer {
     background: #0f0c29;
     color: #ffffffcc;
@@ -1498,16 +1375,6 @@ nav {
     margin: 0;
   }
   
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1563,12 +1430,6 @@ nav {
 
 
 
-
-
-
-
-
-/* Hide the image on mobile devices */
 @media (max-width: 600px) {
     .hero-photo-container {
         display: none; /* Hide the image container on small screens */
